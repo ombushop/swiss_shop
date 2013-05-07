@@ -1,0 +1,391 @@
+/* 
+**************************************
+OmbuShop - Tu Tienda Online
+**************************************
+Theme: Swiss Shop
+File: shop.css
+**************************************
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus { outline: 0 }
+body {
+	font-size: 14px;
+	line-height: 1.5;
+	background: #eee;
+	color:#111;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 0;
+}
+body.one-col #content {
+	display: inline;
+	float: left;
+	width: 950px;
+}
+body.two-col #content {
+	display: inline;
+	float: left;
+	width: 750px;
+}
+
+ol, ul { list-style: none }
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	margin-bottom: 1.4em;
+	vertical-align: middle;
+	width: 100%;
+}
+caption, th, td {
+	font-weight: 400;
+	text-align: left;
+	vertical-align: middle;
+}
+q:before { content: "" }
+q:after { content: "" }
+blockquote:before { content: "" }
+blockquote:after { content: "" }
+img a { border: none }
+hr {
+	background: #ddd;
+	border: none;
+	clear: both;
+	color: #ddd;
+	float: none;
+	height: .1em;
+	margin: 0 0 1.45em;
+	width: 100%;
+}
+hr.space {
+	background: #fff;
+	border: none;
+	clear: both;
+	color: #fff;
+	float: none;
+	height: .1em;
+	margin: 0 0 1.45em;
+	width: 100%;
+}
+h1 {
+	color: #222;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: .5em;
+}
+h1 img { margin: 0 }
+h2 {
+	color: #222;
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: .75em;
+}
+h3 {
+	color: #222;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+h4 {
+	color: #222;
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 1.25;
+	margin-bottom: 1.25em;
+}
+h5 {
+	color: #222;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+h6 {
+	color: #222;
+	font-size: 1em;
+	font-weight: 700;
+}
+h2 img { margin: 0 }
+h3 img { margin: 0 }
+h4 img { margin: 0 }
+h5 img { margin: 0 }
+h6 img { margin: 0 }
+p { margin: 0 0 1.5em }
+p img.left {
+	display: inline;
+	float: left;
+	margin: 1.5em 1.5em 1.5em 0;
+	padding: 0;
+}
+p img.right {
+	display: inline;
+	float: right;
+	margin: 1.5em 0 1.5em 1.5em;
+	padding: 0;
+}
+a {
+	color: #d00;
+	text-decoration: underline;
+}
+blockquote {
+	color: #666;
+	font-style: italic;
+	margin: 1.5em;
+}
+strong { font-weight: 700 }
+em { font-style: italic }
+dfn {
+	font-style: italic;
+	font-weight: 700;
+}
+sup, sub { line-height: 0 }
+abbr, acronym { border-bottom: 1px dotted #666 }
+address {
+	font-style: italic;
+	margin: 0 0 1.5em;
+}
+del { color: #666 }
+pre {
+	margin: 1.5em 0;
+	white-space: pre;
+}
+pre, code, tt {
+	font: 1em 'andale mono', 'lucida console', monospace;
+	line-height: 1.5;
+}
+li ul { margin: 0 }
+li ol { margin: 0 1.5em }
+ul {
+	list-style-type: disc;
+	margin: 0 1.5em 1.5em;
+}
+ol {
+	list-style-type: decimal;
+	margin: 0 1.5em 1.5em;
+}
+dl { margin: 0 0 1.5em }
+dl dt { font-weight: 700 }
+dd { margin-left: 1.5em }
+th { font-weight: 700 }
+thead th { background: #c3d9ff }
+th, td, caption { padding: 4px 10px 4px 5px }
+tr.even td { background: #e5ecf9 }
+tfoot { font-style: italic }
+caption { background: #eee }
+.quiet { color: #666 }
+.loud { color: #111 }
+form p.field {
+	clear: both;
+	margin-bottom: .5em;
+}
+form p.field span.req {
+	color: red;
+	float: left;
+	margin-left: 2px;
+	position: relative;
+	top: -3px;
+}
+input {
+	font-size: 13px;
+	line-height: 1.4em;
+	padding: 3px;
+}
+form p.field input[type=text] {
+	float: left;
+	margin: 0 5px 7px 0;
+}
+form p.field select {
+	float: left;
+	margin: 0 5px 7px 0;
+}
+form p.field.radios { line-height: 150% }
+label { font-weight: 700 }
+fieldset { margin-bottom: 1em }
+legend {
+	font-size: 150%;
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+#page { padding-bottom: 60px }
+#wrapper {
+	background: #FFF;
+	border-top: 4px solid #000;
+	margin: 0 auto;
+	min-height: 500px;
+	padding: 25px 20px 20px;
+	position: relative;
+}
+#header {
+	background-color: #FFF;
+	clear: both;
+	color: #d00;
+	height: 130px;
+	margin: 0 auto;
+	min-height: 120px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	width: 950px;
+}
+#header a {
+	color: #333;
+	text-decoration: none;
+}
+#header a:hover {
+	background-color: transparent;
+	color: #111;
+}
+#header a img { border: medium none }
+#footer {
+	border-top: 4px solid #000;
+	clear: both;
+	color: #777;
+	font-size: 12px;
+	margin-left: -20px;
+	margin-right: -20px;
+	min-height: 100px;
+	overflow: auto;
+	padding: 1em 1em 0;
+	position: relative;
+}
+#footer div.store_footer {
+	clear: none;
+	display: block;
+	overflow: auto;
+	padding: 0;
+	width: 725px;
+}
+#footer div.left { width: 37% }
+#footer div.right {
+	text-align: right;
+	width: 63%;
+}
+#footer div.footer-area1, #footer div.footer-area2, #footer div.footer-area3 {
+	float: left;
+	width: 33%;
+}
+#footer div.footer-area1 > *, #footer div.footer-area2 > *, #footer div.footer-area3 > * { padding-right: 20px }
+#footer h3 {
+	margin-bottom: 8px;
+	margin-top: 3px;
+}
+#ombu-footer {
+	margin-bottom: 0;
+	text-align: right;
+}
+#ombu-footer p { margin-bottom: 0 }
+#ombu-footer img { margin-top: -3px }
+#head_logo {
+	float: left;
+	font-weight: 700;
+	letter-spacing: -1px;
+	margin-bottom: -14px;
+	margin-top: 35px;
+	max-width: 320px;
+}
+#head_logo a span { display: none }
+#admin-bar {
+	background-color: #282828;
+	text-align: center;
+}
+#login-bar {
+	display: block;
+	margin: 0 auto;
+	text-align: right;
+	width: 977px;
+}
+#login-bar a {
+	color: #FFF;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+#login-bar a:hover { color: #EEE }
+#cart_bar {
+	float: right;
+	margin: 0 0 1em;
+	text-align: right;
+}
+#cart_bar .cart-indicator { list-style-type: none }
+#cart_bar .cart-indicator a {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius:    0 0 3px 3px;
+	border-radius:         0 0 3px 3px;
+	background-color: #666;
+	border-top: 1px solid #888;
+	color: #FFF;
+	display: inline-block;
+	margin-right: -15px;
+	padding: 5px 15px;
+	text-shadow: 0 1px #333;
+}
+#cart_bar .cart-indicator a.empty { color: #aaa }
+#cart_bar .cart-indicator a:hover {
+	background-color: #555;
+	border-top-color: #777;
+}
+#search_bar {
+	margin: 0;
+	position: absolute;
+	top: 50px;
+	right: 10px;
+}
+#search_bar label { display: none }
+ul#navigation_bar {
+	bottom: 0;
+	display: block;
+	font-size: 13px;
+	margin: 0;
+	overflow: auto;
+	padding: 5px 0 0;
+	position: absolute;
+	right: 0;
+}
+ul#navigation_bar li {
+	float: left;
+	margin-right: 4px;
+	overflow: visible;
+}
+ul#navigation_bar li a {
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition:    all 200ms ease-out;
+	-o-transition:      all 200ms ease-out;
+	transition:         all 200ms ease-out;
+	border-bottom: 3px solid #fff;
+	color: #000;
+	display: block;
+	font-weight: 700;
+	padding: 3px 8px;
+}
+ul#navigation_bar li.current-page a {
+	border-bottom: 3px solid #000;
+	color: #d00;
+}
+ul#navigation_bar li a:hover {
+	background: none #eee;
+	border-bottom: 3px solid #000;
+	color: #000;
+}
+ul#navigation_bar li a:active {
+	-webkit-transition: none;
+	-moz-transition:    none;
+	-o-transition:      none;
+	transition:         none;
+	color: #d00;
+}
+div#ombu-footer {
+	bottom: 15px;
+	height: 38px;
+	left: 0;
+	position: absolute;
+}
+
