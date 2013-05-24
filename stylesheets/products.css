@@ -1,3 +1,6 @@
+/* @override 
+	http://probandomails.local/assets/stylesheets/48/products.css */
+
 /* 
 **************************************
 OmbuShop - Tu Tienda Online
@@ -7,16 +10,25 @@ File: products.css
 **************************************
 */
 
+/*
+PALETA:
+*******
+negro: #2a1e19;
+gris: #d5d1cc;
+rojo: #f00;
+*/
+
+/* === GENERALES */
 a img { border: none }
 h1 { font-size: 2.5em }
 #page h1 {
-	color: #000;
+	color: #2a1e19;
 	font-weight: 700;
 	letter-spacing: -2px;
 	text-transform: lowercase;
 }
 body#product-details #page h1 {
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #2a1e19;
 	margin-bottom: 25px;
 	padding-bottom: 15px;
 }
@@ -85,8 +97,9 @@ a { outline: none }
 #wrapper {
 	clear: left;
 	min-height: 500px;
-	padding: 25px 20px 20px;
 	position: relative;
+  padding: 25px 0;
+  width: 982px;
 }
 #content { min-height: 500px }
 #nav-bar {
@@ -133,13 +146,26 @@ ul#nav-bar li {
 	border-top: none;
 	padding: 5px 15px;
 }
+
+/* === SIDEBAR */
 #sidebar {
 	display: inline;
 	float: left;
-	margin-right: 25px;
 	width: 174px;
+	margin-left: 0px;
+	margin-right: 45px;
 }
-#sidebar h3 { margin-bottom: .5em }
+#sidebar h3 { 
+  margin-bottom: .5em;
+}
+#sidebar h5 {
+  margin-top: -12px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/* === NAVIGATION */
 .navigation-list {
 	font-weight: 700;
 	list-style: none;
@@ -151,11 +177,11 @@ ul#nav-bar li {
 	-moz-transition:    all .2s ease-out;
 	-o-transition:      all .2s ease-out;
 	transition:         all .2s ease-out;
-	border-left: 3px solid #eee;
-	color: #000;
+	border-left: 4px solid #d5d1cc;
+	color: #2a1e19;
 	cursor: pointer!important;
 	display: block;
-	font-size: 13px;
+	font-size: 17px;
 	line-height: 1.4em;
 	margin-bottom: 5px;
 	overflow: hidden;
@@ -180,13 +206,13 @@ ul#nav-bar li {
 	width: 166px;
 }
 .navigation-list li a:hover {
-	background-color: #eee;
-	border-left: 3px solid #dedede;
+	background-color: #d5d1cc;
+	border-left: 4px solid #d5d1cc;
 	padding-left: 20px;
 }
 .navigation-list li a:active { color: #d00 }
 .navigation-list li.current > a {
-	border-left: 3px solid #000;
+	border-left: 4px solid #2a1e19;
 	color: #d00;
 	font-weight: 700;
 	overflow: hidden;
@@ -195,6 +221,8 @@ ul#nav-bar li {
 }
 .navigation-list li.current a.root { width: 183px }
 .navigation-list a.root { text-indent: 0 }
+
+/* === BREADCRUMBS */
 .breadcrumbs {
 	font-size: 12px;
 	margin-bottom: 1.7em;
@@ -223,6 +251,8 @@ ul#nav-bar li {
 	padding: 5px 7px;
 	text-decoration: none;
 }
+
+/* === LANGUAGE */
 ul#language-bar {
 	display: inline;
 	list-style-type: none;
@@ -235,6 +265,8 @@ ul#language-bar li {
 	padding: 0;
 }
 ul#language-bar strong { font-weight: 400 }
+
+/* === PAGINATION */
 .pagination a.page {
 	border: 1px solid #9aafe5;
 	color: #d00;
@@ -244,11 +276,11 @@ ul#language-bar strong { font-weight: 400 }
 }
 .pagination a.page:hover {
 	border: 1px solid #2b66a5;
-	color: #000;
+	color: #2a1e19;
 }
 .pagination a.page:active {
 	border: 1px solid #2b66a5;
-	color: #000;
+	color: #2a1e19;
 }
 .pagination span.page {
 	margin: 0 3px;
@@ -266,13 +298,15 @@ ul#language-bar strong { font-weight: 400 }
 	color: #fff;
 	font-weight: 700;
 }
+
+/* === SHOWING ERRORS */
 .formError {
 	-webkit-border-radius: 5px;
 	-moz-border-radius:    5px;
 	border-radius:         5px;
 	background: #f4b4b4 url(/images/shadow_top.png) 0 -50px repeat-x;
-	border: 1px solid #000;
-	color: #000;
+	border: 1px solid #2a1e19;
+	color: #2a1e19;
 	font-size: 1.3em;
 	margin-bottom: 1em;
 	padding: .8em;
@@ -289,8 +323,8 @@ ul#language-bar strong { font-weight: 400 }
 	-moz-border-radius:    5px;
 	border-radius:         5px;	
 	background: #f4b4b4 url(/images/shadow_top.png) 0 -50px repeat-x;
-	border: 1px solid #000;
-	color: #000;
+	border: 1px solid #2a1e19;
+	color: #2a1e19;
 	font-size: 1.3em;
 	margin-bottom: 1em;
 	padding: .8em;
@@ -303,6 +337,8 @@ ul#language-bar strong { font-weight: 400 }
 	margin: 0;
 }
 .fieldWithErrors { clear: none }
+
+/* === BUTTONS */
 button.large, a.button.large, input.button.large {
 	-webkit-border-radius: .3em;
 	-moz-border-radius:    .3em;
@@ -342,6 +378,8 @@ button::-moz-focus-inner {
 }
 p a.button img { margin: 0 5px 0 0 }
 p button img { margin: 0 5px 0 0 }
+
+/* === PRODUCTS */
 .prices { font-weight: 700 }
 .prices #product-details .prices { font-size: 1.25em }
 .price.selling { color: #860000 }
@@ -359,8 +397,7 @@ p button img { margin: 0 5px 0 0 }
 	width: 100%;
 }
 ul.product-listing li.product {
-	border-bottom: 1px #000 dotted;
-	border-top: 2px #000 solid;
+	border-bottom: 4px #2a1e19 solid;
 	float: left;
 	margin: 10px 10px 20px;
 	text-align: center;
@@ -370,7 +407,6 @@ ul.product-listing li.product:hover { border-color: #1b1b1b }
 ul.product-listing li.product a.image-link-container {
 	display: block;
 	padding-bottom: 2px;
-	padding-top: 2px;
 	position: relative;
 	width: 100%;
 }
@@ -380,48 +416,54 @@ ul.product-listing li.product a.image-link-container img {
 	width: 220px;
 }
 ul.product-listing li.product .product-info {
-	border-top: 1px dotted #000;
-	color: #000;
+	border-top: 4px solid #2a1e19;
+	color: #2a1e19;
 	font-size: 12px;
 	font-weight: 700;
 	min-height: 60px;
-	padding: 5px;
+	padding: 5px 0;
 	text-align: left;
-	text-transform: uppercase;
-	width: 95.5%;
+	text-transform: lowercase;
+	width: 100%;
 }
 ul.product-listing li.product:hover .product-info {
-	background: #eee;
-	color: #000;
+	background: #d5d1cc;
+	color: #2a1e19;
 }
 ul.product-listing li.product a {
 	display: block;
 	text-decoration: none;
 }
 ul.product-listing li.product h4.product-name {
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: 700;
-	margin: 0;
+	margin: 0;	
 }
-ul.product-listing li.product:hover h4.product-name { text-decoration: underline }
 ul.product-listing li.product .product-price {
-	color: #CCC;
 	display: block;
 	font-size: 16px;
 	margin: 0;
 }
 ul.product-listing li.product .product-name a {
-	color: #000;
+	color: #2a1e19;
 	display: block;
 	line-height: 1.1;
+	text-decoration: none;
+}
+ul.product-listing li.product:hover .product-name a {
+  color: #d00;
 }
 ul.product-listing li.product .product-price a {
-	color: #aaa;
+	color: #2a1e19;
 	display: block;
-	font-size: 16px;
-	margin-bottom: 5px;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 8px;
+  line-height: 1;
 }
 div.product-info { position: relative }
+
+/* === SOCIAL */
 #content.index div.social-container { text-align: left }
 #content.index div.social-container .fb-like, #content.index div.social-container div.fb-like-container {
 	display: block!important;
@@ -444,6 +486,8 @@ div.product-info { position: relative }
 	width: 107px;
 }
 div.in-product-social-container { margin: 20px 0 }
+
+/* === THUMBNAILS */
 ul.thumbnails {
 	list-style: none;
 	margin: 0;
@@ -488,7 +532,7 @@ ul.thumbnails li.selected { border-color: #999 }
 	padding: 6px 0;
 }
 #product-images #main-image {
-	border-right: 1px dotted #000;
+	border-right: 1px dotted #2a1e19;
 	min-height: 250px;
 	position: relative;
 }
@@ -497,7 +541,7 @@ ul.thumbnails li.selected { border-color: #999 }
 	position: absolute;
 }
 #product-description {
-	border-right: 1px dotted #000;
+	border-right: 1px dotted #2a1e19;
 	display: inline;
 	float: left;
 	margin-right: 25px;
@@ -536,6 +580,8 @@ ul.thumbnails li.selected { border-color: #999 }
 	width: 228px;
 }
 #taxon-crumbs h3 { font-size: 16px }
+
+/* === CART */
 dl.table-display {
 	font-size: 12px;
 	margin: 0;
@@ -616,9 +662,9 @@ input.openid_url {
 	margin: -4px;
 }
 .cloud-zoom-title {
-	background-color: #000;
+	background-color: #2a1e19;
 	color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Titillium Web', 'Helvetica', Arial, sans-serif;	
 	font-size: 10px;
 	font-weight: 700;
 	padding: 3px;
@@ -633,7 +679,7 @@ input.openid_url {
 }
 .cloud-zoom-loading {
 	background: #222;
-	border: 1px solid #000;
+	border: 1px solid #2a1e19;
 	color: #FFF;
 	padding: 3px;
 }

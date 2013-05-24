@@ -1,3 +1,6 @@
+/* @override 
+	http://probandomails.local/assets/stylesheets/48/shop.css */
+
 /* 
 **************************************
 OmbuShop - Tu Tienda Online
@@ -7,6 +10,15 @@ File: shop.css
 **************************************
 */
 
+/*
+PALETA:
+*******
+negro: #2a1e19;
+gris: #d5d1cc;
+rojo: #f00;
+*/
+
+/* === RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
@@ -19,13 +31,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 :focus { outline: 0 }
-body {
+
+/* === GENERALES */
+body {	
+  font-family: 'Titillium Web', 'Helvetica', Arial, sans-serif;	
 	font-size: 14px;
 	line-height: 1.5;
-	background: #eee;
-	color:#111;
-	font-family: Helvetica, Arial, sans-serif;
+	background: #d5d1cc;
+	color: #2a1e19;
 	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 body.one-col #content {
 	display: inline;
@@ -36,6 +52,9 @@ body.two-col #content {
 	display: inline;
 	float: left;
 	width: 750px;
+}
+#page #content {
+  font-size: 16px;
 }
 
 ol, ul { list-style: none }
@@ -216,15 +235,23 @@ legend {
 	font-weight: 700;
 	margin-bottom: .5em;
 }
-#page { padding-bottom: 60px }
+#page {
+  width: 990px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
 #wrapper {
 	background: #FFF;
-	border-top: 4px solid #000;
+	border-top: 4px solid #2a1e19;
 	margin: 0 auto;
 	min-height: 500px;
-	padding: 25px 20px 20px;
+	padding: 25px 20px 0;
 	position: relative;
 }
+
+/* === HEADER */
 #header {
 	background-color: #FFF;
 	clear: both;
@@ -246,8 +273,10 @@ legend {
 	color: #111;
 }
 #header a img { border: medium none }
+
+/* === FOOTER */
 #footer {
-	border-top: 4px solid #000;
+	border-top: 4px solid #2a1e19;
 	clear: both;
 	color: #777;
 	font-size: 12px;
@@ -255,15 +284,15 @@ legend {
 	margin-right: -20px;
 	min-height: 100px;
 	overflow: auto;
-	padding: 1em 1em 0;
+	padding: 20px 0 0;
 	position: relative;
 }
 #footer div.store_footer {
-	clear: none;
+	clear: both;
 	display: block;
-	overflow: auto;
 	padding: 0;
-	width: 725px;
+	width: 100%;
+	text-align: left;
 }
 #footer div.left { width: 37% }
 #footer div.right {
@@ -279,19 +308,18 @@ legend {
 	margin-bottom: 8px;
 	margin-top: 3px;
 }
-#ombu-footer {
-	margin-bottom: 0;
-	text-align: right;
-}
 #ombu-footer p { margin-bottom: 0 }
 #ombu-footer img { margin-top: -3px }
+
+/* === HEADER + */
 #head_logo {
 	float: left;
 	font-weight: 700;
 	letter-spacing: -1px;
 	margin-bottom: -14px;
-	margin-top: 35px;
+	margin-top: 15px;
 	max-width: 320px;
+  margin-left: -20px;
 }
 #head_logo a span { display: none }
 #admin-bar {
@@ -307,7 +335,7 @@ legend {
 #login-bar a {
 	color: #FFF;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #000;
+	text-shadow: 0 1px 0 #2a1e19;
 }
 #login-bar a:hover { color: #EEE }
 #cart_bar {
@@ -317,33 +345,34 @@ legend {
 }
 #cart_bar .cart-indicator { list-style-type: none }
 #cart_bar .cart-indicator a {
-	-webkit-border-radius: 0 0 3px 3px;
-	-moz-border-radius:    0 0 3px 3px;
-	border-radius:         0 0 3px 3px;
-	background-color: #666;
-	border-top: 1px solid #888;
-	color: #FFF;
+	background-color: #d5d1cc;
+	color: #2a1e19;
 	display: inline-block;
-	margin-right: -15px;
+	margin-right: -20px;
 	padding: 5px 15px;
-	text-shadow: 0 1px #333;
+  width: 162px;
+  text-align: center;
 }
-#cart_bar .cart-indicator a.empty { color: #aaa }
+#cart_bar .cart-indicator a.empty { 
+  color: #2a1e19;
+}
 #cart_bar .cart-indicator a:hover {
 	background-color: #555;
-	border-top-color: #777;
+	color:  #fff;
 }
 #search_bar {
 	margin: 0;
 	position: absolute;
 	top: 50px;
-	right: 10px;
+	right: 0px;
 }
 #search_bar label { display: none }
+
+/* === NAVIGATION */
 ul#navigation_bar {
 	bottom: 0;
 	display: block;
-	font-size: 13px;
+	font-size: 15px;
 	margin: 0;
 	overflow: auto;
 	padding: 5px 0 0;
@@ -361,19 +390,19 @@ ul#navigation_bar li a {
 	-o-transition:      all 200ms ease-out;
 	transition:         all 200ms ease-out;
 	border-bottom: 3px solid #fff;
-	color: #000;
+	color: #2a1e19;
 	display: block;
 	font-weight: 700;
 	padding: 3px 8px;
 }
 ul#navigation_bar li.current-page a {
-	border-bottom: 3px solid #000;
+	border-bottom: 3px solid #2a1e19;
 	color: #d00;
 }
 ul#navigation_bar li a:hover {
 	background: none #eee;
-	border-bottom: 3px solid #000;
-	color: #000;
+	border-bottom: 3px solid #2a1e19;
+	color: #2a1e19;
 }
 ul#navigation_bar li a:active {
 	-webkit-transition: none;
@@ -383,9 +412,33 @@ ul#navigation_bar li a:active {
 	color: #d00;
 }
 div#ombu-footer {
-	bottom: 15px;
+	bottom: 25px;
 	height: 38px;
-	left: 0;
+	left: 20px;
 	position: absolute;
+  margin-bottom: 0;
+  text-align: right;
 }
+
+/* === SEARCH FIELD === */
+#search_bar input#keywords {
+  border: #2a1e19 solid 1px;
+  background: #fff;
+  color: #333;
+} 
+#search_bar input#keywords:focus, #search_bar input#keywords:hover {
+  border: #2a1e19 solid 1px;
+  background: #eee;
+}
+#search_bar input {
+  border: #222 solid 2px;
+  background: #222;
+  color: #fff;
+  cursor:  pointer;
+}
+#search_bar input:hover {
+  background: #666;
+  border: #666 solid 2px;
+}
+
 
