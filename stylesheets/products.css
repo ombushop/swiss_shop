@@ -1,4 +1,4 @@
-/* 
+/*
 **************************************
 OmbuShop - Tu Tienda Online
 **************************************
@@ -21,8 +21,6 @@ h1 { font-size: 2.5em }
 #page h1 {
 	color: #2a1e19;
 	font-weight: 700;
-	letter-spacing: -2px;
-	text-transform: lowercase;
 }
 body#product-details #page h1 {
 	border-bottom: 4px solid #2a1e19;
@@ -97,6 +95,7 @@ a { outline: none }
 	position: relative;
   padding: 25px 0;
   width: 982px;
+  padding-bottom: 0;
 }
 #content { min-height: 500px }
 #nav-bar {
@@ -152,7 +151,7 @@ ul#nav-bar li {
 	margin-left: 0px;
 	margin-right: 45px;
 }
-#sidebar h3 { 
+#sidebar h3 {
   margin-bottom: .5em;
 }
 #sidebar h5 {
@@ -318,7 +317,7 @@ ul#language-bar strong { font-weight: 400 }
 .errorExplanation {
 	-webkit-border-radius: 5px;
 	-moz-border-radius:    5px;
-	border-radius:         5px;	
+	border-radius:         5px;
 	background: #f4b4b4 url(/images/shadow_top.png) 0 -50px repeat-x;
 	border: 1px solid #2a1e19;
 	color: #2a1e19;
@@ -434,7 +433,7 @@ ul.product-listing li.product a {
 ul.product-listing li.product h4.product-name {
 	font-size: 20px;
 	font-weight: 700;
-	margin: 0;	
+	margin: 0;
 }
 ul.product-listing li.product .product-price {
 	display: block;
@@ -664,7 +663,7 @@ input.openid_url {
 .cloud-zoom-title {
 	background-color: #2a1e19;
 	color: #fff;
-  font-family: 'Titillium Web', 'Helvetica', Arial, sans-serif;	
+  font-family: 'Titillium Web', 'Helvetica', Arial, sans-serif;
 	font-size: 10px;
 	font-weight: 700;
 	padding: 3px;
