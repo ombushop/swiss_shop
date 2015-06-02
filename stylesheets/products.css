@@ -376,7 +376,7 @@ p a.button img { margin: 0 5px 0 0 }
 p button img { margin: 0 5px 0 0 }
 
 /* === PRODUCTS */
-.prices { font-weight: 700 }
+.prices { font-weight: 700; margin-bottom: 5px;}
 .prices #product-details .prices { font-size: 1.25em }
 .price.selling { color: #d00
 }
@@ -482,7 +482,15 @@ div.product-info { position: relative }
 	width: 107px;
 }
 div.in-product-social-container { margin: 20px 0 }
-
+.payment_images{
+  border-top: 1px solid #000;
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #000;
+}
+.payment_images span{
+  color: #000000;
+}
 /* === THUMBNAILS */
 ul.thumbnails {
 	list-style: none;
@@ -559,7 +567,17 @@ ul.thumbnails li.selected { border-color: #999 }
 #cart-form button.large {
 	font-size: 14px!important;
 	padding: 5px 10px;
-	box-shadow: #fff 0 0 4px 5px;
+	background: none;
+  background-color: #DD0000;
+  color: #fff;
+  text-shadow: none;
+  font-weight: normal;
+  border-radius: 0;
+  border: 0;
+  margin:0;
+}
+#cart-form button.large:hover{
+  background-color: #000000;
 }
 #cart-form input {
 	font-size: 16px;
@@ -574,9 +592,9 @@ ul.thumbnails li.selected { border-color: #999 }
 	clear: left;
 	display: block;
 	float: left;
-	margin-left: 20px;
 	margin-top: 10px;
 	width: 228px;
+  margin-bottom: 20px;
 }
 #taxon-crumbs h3 { font-size: 16px }
 
