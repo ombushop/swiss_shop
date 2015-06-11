@@ -74,8 +74,8 @@ html{
 body {
   height: 100%;
   background: #f2f4f9;
-  font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.3em;
   color: #1c1e1d;
@@ -87,7 +87,6 @@ body {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -200px;
-  border: 10px solid #406DE4;
 }
 .push, footer{
   min-height: 200px;
@@ -133,21 +132,28 @@ header #header-content{
 #head_logo a, #head_logo a:hover {
   background: transparent;
 }
+#head_logo a{
+  display: block;
+  text-align: center;
+}
 #head_logo span {
   display: none;
+}
+#head_logo a img{
+  margin: auto;
 }
 #head_logo div.generated_logo span {
   display: block;
   font-size: 2.5em;
   text-transform: uppercase;
   margin-top: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
 }
 #contact-info{
   position:absolute;
   top:0;
-  right:0;
+  left:0;
 }
 #contact-info ul li{
   float:left;
@@ -156,31 +162,29 @@ header #header-content{
 #contact-info ul li a{
   cursor:pointer;
   display:block;
-  width: 30px;
+  width: 20px;
   border-radius: 30px;
-  text-align: center;
+  text-align: left;
   height: 30px;
-  background-color: #406DE4;
-  color: #ffffff;
+  color: #000000;
 }
 #contact-info ul li a:hover {
-  color: #ffffff;
-  background-color: #364d8c;
+  color: #FF2929;
 }
 #contact-info ul li a i{
   font-size: 16px;
   padding: 6px 0;
-  width: 30px;
+  width: 20px;
 }
 #contact-info ul li.phone{
   clear:both;
   line-height: 24px;
   margin-top: 10px;
   font-size: 12px;
-  font-weight: 400
+  font-weight: 400;
 }
 #contact-info ul li.phone i{
-  color: #406DE4;
+  color: #000000;
   font-size: 16px;
   margin-right: 5px;
   top: 2px;
@@ -192,12 +196,12 @@ header #header-content{
   background-color: #ffffff;
 }
 #navigation-bar {
-  text-align: left;
+  text-align: center;
   margin-top: 20px;
   color: #fff;
   max-width: 960px;
   margin: auto;
-  border-bottom: 1px solid #406DE4;
+  border-bottom: 3px solid #000000;
   padding-bottom: 5px;
 }
 #navigation-bar li {
@@ -208,17 +212,17 @@ header #header-content{
 #navigation-bar li a {
   display: block;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   color:#1c1e1d;
   letter-spacing: 0.5px;
 }
 #navigation-bar li a:hover{
-  color: #406DE4;
+  color: #000000;
 }
 #navigation-bar li.current-page a {
   font-weight: 600;
-  color:#406DE4;
+  color:#000000;
 }
 #cart-bar {
   position: absolute;
@@ -229,7 +233,7 @@ header #header-content{
 #cart-bar a {
   display: block;
   padding: 2px 20px;
-  background: #406DE4;
+  background: #000000;
   color: #fff;
   font-size: 12px;
 }
@@ -241,11 +245,11 @@ header #header-content{
 #search_bar {
   position: absolute;
   top: 0;
-  left: 35%;
+  right: 0;
   font-size: .9em;
 }
 #search_bar form{
-  border: 1px solid #406DE4;
+  border: 1px solid #000000;
 }
 #search_bar label {
   text-transform: uppercase;
@@ -260,11 +264,11 @@ header #header-content{
   padding: 5px 16px;
 }
 #search_bar form input#keywords:hover ~ #search_bar form, #search_bar form input#keywords:focus ~ #search_bar form  {
-  background: #406DE4;
+  background: #000000;
   color: #fff;
 }
 #search_bar form input#search-button {
-  background: #406DE4;
+  background: #000000;
   -webkit-appearance: none;
   color: #fff;
   border: 0;
@@ -283,18 +287,17 @@ header #header-content{
 }
 #taxonomies ul.navigation-list > li > ul {
   background: #fff;
-  padding: 0 10px;
   font-size: 1.5em;
   line-height: 1.5em;
   position: absolute;
-  top: 70px;
+  top: 66px;
   left: 0;
   z-index: 500;
   min-width: 160px;
-  border: 1px solid #f2f4f9;
+  text-transform: uppercase;
 }
 #taxonomies ul.navigation-list.opened > li > h5 {
-  background-color: #406DE4;
+  background-color: #000000;
   cursor: pointer;
 }
 #taxonomies ul.navigation-list > li:hover > ul {
@@ -309,7 +312,7 @@ header #header-content{
   cursor: pointer;
   width: 160px;
   font-size: 1em;
-  background-color: #406DE4;
+  background-color: #000000;
   color: #fff;
 }
 #taxonomies > ul.navigation-list > li > h5:after{
@@ -332,19 +335,18 @@ header #header-content{
 
 #taxonomies ul.navigation-list a {
   display: block;
-  padding: .5em 0.8em;
+  padding: .5em 0em;
   line-height: 1.2em;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #000;
 }
 #taxonomies ul.navigation-list a:hover{
-  color: #406DE4;
-}
-#taxonomies ul.navigation-list li{
-  border-top: 1px solid #F2F4F9;
+  color: #000000;
 }
 li.root > a{
-  font-weight: 500 !important;
+  font-weight: 900 !important;
   padding-left: 0 !important;
 }
 #taxonomies h1{
@@ -353,7 +355,7 @@ li.root > a{
   font-weight: 700;
   font-size: 14px;
   min-width: 160px;
-  color: #406DE4;
+  color: #000000;
 }
 
 /* ========================================= */
@@ -403,9 +405,7 @@ div.breadcrumbs li {
   margin-bottom: 15px;
   margin-right: 15px;
   float: left;
-  border: 1px solid #F2F4F9;
   background-color: #fff;
-  padding: 5px;
 }
 
 .product-listing .product img {
@@ -418,10 +418,11 @@ div.breadcrumbs li {
   padding-top: 10px;
   padding-bottom: 32px;
   min-height: 105px;
+  border-top: 2px solid #000;
 }
 .product-info .product-price{
-  color: #406DE4;
-  font-weight: 300;
+  color: #000000;
+  font-weight: 400;
 }
 .product-listing .product a:hover img {
   opacity:0.8;
@@ -433,8 +434,8 @@ div.breadcrumbs li {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  width: 96%;
-  border-top: 1px solid #F2F4F9;
+  width: 100%;
+  border-top: 2px solid #000000;
   padding-top: 8px;
 }
 
@@ -506,8 +507,11 @@ div.breadcrumbs li {
 footer {
   overflow: auto;
   padding: 30px 0 20px 0;
-  background: #406de4;
   padding-bottom: 0px;
+}
+footer .footer-container{
+  border-top: 4px solid #000;
+  padding-top: 10px;
 }
 .footer-container{
   max-width:960px;
@@ -533,7 +537,7 @@ footer {
 }
 .footer-container nav ul li a{
   font-size: 12px;
-  color: #ffffff;
+  color: #000000;
   letter-spacing: 0;
   font-weight: 400;
 }
@@ -550,7 +554,7 @@ footer {
   float: left;
   clear: both;
   font-size: 11.5px;
-  color: #ffffff;
+  color: #000000;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -573,7 +577,7 @@ footer {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 1em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
 }
 footer .footer-container #contact-info{
@@ -593,7 +597,7 @@ footer .footer-container #contact-info{
 }
 footer #contact-info ul li a{
   background-color: #fff;
-  color: #406de4;
+  color: #000000;
 }
 footer #contact-info ul li a:hover{
   background-color: #fff;
@@ -708,7 +712,7 @@ body.template-page #content p {
   letter-spacing: 0;
   margin-top: .1em;
   margin-bottom: .5em;
-  color: #406DE4;
+  color: #000000;
 }
 #cart-form p.prices {
   font-size: 1.5em;
@@ -718,7 +722,7 @@ body.template-page #content p {
 }
 button.buy-button {
   font-family: 'Signika', arial, sans-serif;
-  background: #406DE4;
+  background: #000000;
   border: 0;
   color: #ffffff;
   font-weight: normal;
@@ -775,7 +779,7 @@ button.buy-button:active {
   clear: both;
 }
 #taxon-crumbs a {
-  background: #406de4;
+  background: #000000;
   border: 0;
   display: inline-block;
   color: #ffffff;
@@ -819,6 +823,13 @@ button.buy-button:active {
 @media screen and (max-width: 800px) {
   #search_bar {
     display: none;
+  }
+  #head_logo a{
+    text-align: left;
+  }
+  #contact-info{
+    right: 0;
+    left: auto;
   }
   #product-images{
     width:100%;
@@ -893,7 +904,7 @@ button.buy-button:active {
     border-bottom: 0;
   }
   #navigation-bar li.current-page a{
-    background-color: #406DE4;
+    background-color: #000000;
     color: #ffffff;
   }
   #navigation-bar li {
@@ -904,7 +915,7 @@ button.buy-button:active {
     font-size: 1em;
     padding: .3em;
     color: #1c1e1d;
-    border-bottom: 1px solid #406DE4;
+    border-bottom: 1px solid #000000;
   }
   #taxonomies {
     position: static;
@@ -948,6 +959,9 @@ button.buy-button:active {
   }
   header #contact-info{
     display:none;
+  }
+  #head_logo a{
+    text-align: center;
   }
   #header-content #head_logo a{
     text-align:center;
