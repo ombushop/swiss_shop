@@ -213,9 +213,7 @@
         <div id="sub-header">
           <nav id="nav-container">
             <ul id="navigation-bar">
-              {% if shop.homepage %}
-                <li><a href="/products">Productos</a></li>
-              {% endif %}
+              <li><a href="/products">Productos</a></li>
               {% for page in pages %}
               <li {% if page.url contains current_path and current_path != "/" %}class="current-page"{% endif %}><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
               {% endfor %}
