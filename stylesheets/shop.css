@@ -103,10 +103,10 @@ a {
   transition:         500ms background, color;
 }
 a:hover {
-  color: #222;
+  color: #939393;
 }
 a:active {
-  color: #111;
+  color: #939393;
 }
 
 /* ========================================= */
@@ -115,7 +115,6 @@ a:active {
 header {
   padding-top: 15px;
   position: relative;
-  background: #ffffff;
   margin-left: -20px;
   margin-right: -20px;
 }
@@ -169,7 +168,7 @@ header #header-content{
   color: #000000;
 }
 #contact-info ul li a:hover {
-  color: #FF2929;
+  color: #939393;
 }
 #contact-info ul li a i{
   font-size: 16px;
@@ -193,7 +192,6 @@ header #header-content{
 
 #nav-container{
   background: none;
-  background-color: #ffffff;
 }
 #navigation-bar {
   text-align: center;
@@ -201,12 +199,11 @@ header #header-content{
   color: #fff;
   max-width: 960px;
   margin: auto;
-  border-bottom: 3px solid #000000;
-  padding-bottom: 5px;
+  border-bottom: 2px solid #000000;
 }
 #navigation-bar li {
   display: inline-block;
-  padding: 4px 15px 0 0;
+  padding: 0 4px;
 
 }
 #navigation-bar li a {
@@ -216,13 +213,16 @@ header #header-content{
   text-transform: uppercase;
   color:#1c1e1d;
   letter-spacing: 0.5px;
+  padding: 2px 10px;
 }
 #navigation-bar li a:hover{
-  color: #000000;
+  color: #939393;
 }
 #navigation-bar li.current-page a {
   font-weight: 600;
   color:#000000;
+  background-color: #000;
+  color: #fff;
 }
 #cart-bar {
   position: absolute;
@@ -238,7 +238,7 @@ header #header-content{
   font-size: 12px;
 }
 #cart-bar a:hover {
-  background: #364d8c;
+  background: #939393;
 }
 
 /* Search bar */
@@ -249,7 +249,7 @@ header #header-content{
   font-size: .9em;
 }
 #search_bar form{
-  border: 1px solid #000000;
+  border: 2px solid #000000;
 }
 #search_bar label {
   text-transform: uppercase;
@@ -260,11 +260,11 @@ header #header-content{
 }
 #search_bar form input#keywords {
   border: 0;
-  background: #fff;
+  background: none;
   padding: 5px 16px;
 }
 #search_bar form input#keywords:hover ~ #search_bar form, #search_bar form input#keywords:focus ~ #search_bar form  {
-  background: #000000;
+  background: #939393;
   color: #fff;
 }
 #search_bar form input#search-button {
@@ -286,7 +286,6 @@ header #header-content{
   background: #F2F4F9;
 }
 #taxonomies ul.navigation-list > li > ul {
-  background: #fff;
   font-size: 1.5em;
   line-height: 1.5em;
   position: absolute;
@@ -295,6 +294,10 @@ header #header-content{
   z-index: 500;
   min-width: 160px;
   text-transform: uppercase;
+}
+#taxonomies ul.navigation-list > li > ul> li.current > a, #taxonomies ul.navigation-list > li > ul> li.root > ul > li.current> a{
+  background-color: #000;
+  color: #fff;
 }
 #taxonomies ul.navigation-list.opened > li > h5 {
   background-color: #000000;
@@ -335,7 +338,7 @@ header #header-content{
 
 #taxonomies ul.navigation-list a {
   display: block;
-  padding: .5em 0em;
+  padding: .5em 10px;
   line-height: 1.2em;
   font-weight: 400;
   font-size: 12px;
@@ -343,11 +346,10 @@ header #header-content{
   border-bottom: 2px solid #000;
 }
 #taxonomies ul.navigation-list a:hover{
-  color: #000000;
+  color: #939393;
 }
 li.root > a{
   font-weight: 900 !important;
-  padding-left: 0 !important;
 }
 #taxonomies h1{
   text-transform:uppercase;
@@ -363,11 +365,15 @@ li.root > a{
 
 div.breadcrumbs, .search-results-title {
   text-align: center;
-  margin: 2em 0;
-  padding: 10px 0 0 0;
-  height: 2.7em;
-  border-top: 1px solid #F2F4F9;
-  border-bottom: 1px solid #F2F4F9;
+  margin-bottom: 1em;
+  padding: 5px 0 0 0;
+  height: 2em;
+  border: 2px solid #000000;
+}
+.no-products div.breadcrumbs, .search-results-title{
+  background-color: #000;
+  color: #fff;
+  border: 0;
 }
 .search-results-title .search-results-keywords {
   font-weight: 700;
@@ -384,19 +390,11 @@ div.breadcrumbs li {
 
 /* ========================================= */
 /* Product index */
-.no-products {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
 .product-listing {
   margin: 0 0 0 180px;
   min-width: 780px;
   min-height: 300px;
 }
-
-
 .product-listing:after {
   clear: both;
 }
@@ -405,7 +403,6 @@ div.breadcrumbs li {
   margin-bottom: 15px;
   margin-right: 15px;
   float: left;
-  background-color: #fff;
 }
 
 .product-listing .product img {
@@ -413,7 +410,6 @@ div.breadcrumbs li {
 }
 .product-listing .product .product-info {
   color: #1c1e1d;
-  background: #ffffff;
   padding: 10px;
   padding-top: 10px;
   padding-bottom: 32px;
@@ -446,7 +442,7 @@ div.breadcrumbs li {
   margin-left: 10px;
 }
 .product-listing .product .product-name {
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: .2em;
 }
 
@@ -476,7 +472,7 @@ div.breadcrumbs li {
   padding: 0 5px;
 }
 .pagination a:hover {
-  color: #1c1e1d;
+  color: #939393;
 }
 .pagination a:active {
   color: #1c1e1d;
@@ -510,8 +506,8 @@ footer {
   padding-bottom: 0px;
 }
 footer .footer-container{
-  border-top: 4px solid #000;
-  padding-top: 10px;
+  border-top: 2px solid #000;
+  padding-top: 20px;
 }
 .footer-container{
   max-width:960px;
@@ -522,8 +518,8 @@ footer .footer-container{
   max-width: 33%;
   float: left;
   padding: 0 2%;
-  border-right: 1px solid #E4F2ED;
-  border-left: 1px solid #E4F2ED;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #000000;
   min-height: 100px;
   width: 36%;
 }
@@ -533,7 +529,6 @@ footer .footer-container{
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   font-size: 12px;
-  color: #fff;
 }
 .footer-container nav ul li a{
   font-size: 12px;
@@ -542,7 +537,7 @@ footer .footer-container{
   font-weight: 400;
 }
 .footer-container nav ul li a:hover{
-  color: #303030;
+  color: #939393;
 }
 .footer-container .store_footer p{
   clear: both;
@@ -596,27 +591,23 @@ footer .footer-container #contact-info{
   padding: 0 2%;
 }
 footer #contact-info ul li a{
-  background-color: #fff;
   color: #000000;
 }
 footer #contact-info ul li a:hover{
-  background-color: #fff;
-  color: #364d8c;
+  color: #939393;
 }
 footer #contact-info ul li.phone, footer #contact-info ul li.phone i{
-  color: #fff;
+  color: #000000;
 }
 #ombushop-footer{
   overflow: auto;
   clear: both;
-  margin-top: 25px;
-  padding: 10px;
+  margin-top: 20px;
+  padding-bottom: 10px;
   font-size: 12px;
   text-align:center;
-  border-top: 1px solid #E4F2ED;
 }
 #ombushop-footer a{
-  color: #ffffff;
   font-weight: 400;
   font-size: 0.9em;
   text-decoration: underline;
@@ -688,7 +679,6 @@ body.template-page #content p {
   color: #1c1e1d;
   margin: 40px auto 5% auto;
   max-width:960px;
-  background-color: #fff;
 }
 .product-content #main-image {
   float: left;
@@ -717,7 +707,7 @@ body.template-page #content p {
 #cart-form p.prices {
   font-size: 1.5em;
   margin-bottom: 1em;
-  border-bottom: 1px solid #F2F4F9;
+  border-bottom: 2px solid #000000;
   padding-bottom: 20px;
 }
 button.buy-button {
@@ -739,7 +729,7 @@ button.buy-button {
 }
 
 button.buy-button:hover {
-  background-color: #364d8c;
+  background-color: #939393;
   color: #ffffff;
   opacity: 0.8;
 }
@@ -748,11 +738,9 @@ button.buy-button:active {
 }
 
 #cart-form .payment_images {
-  color: #1c1e1d;
+  color: #000000;
   padding: 10px 0;
   width: 100%;
-  border-top: 1px solid #F2F4F9;
-  border-bottom: 1px solid #F2F4F9;
   font-weight: 400;
 }
 #cart-form .payment_images span {
@@ -795,7 +783,7 @@ button.buy-button:active {
   font-weight: 400;
 }
 #taxon-crumbs a:hover{
-  background-color: #364d8c;
+  background-color: #939393;
   color: #ffffff;
   opacity: 0.8;
 }
@@ -890,7 +878,7 @@ button.buy-button:active {
     padding-top: 20px;
   }
   .store_footer, .footer-container nav{
-    border-bottom:1px solid #E4F2ED;
+    border-bottom:2px solid #000;
     border-left:0;
     border-right:0;
     padding-bottom: 20px;
@@ -915,13 +903,12 @@ button.buy-button:active {
     font-size: 1em;
     padding: .3em;
     color: #1c1e1d;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
   }
   #taxonomies {
     position: static;
     text-align: center;
-    border-top: #f2f4f9 1px solid;
-    border-bottom: #f2f4f9 1px solid;
+    border-top: #000 2px solid;
     margin: 1em 0;
   }
   #taxonomies > ul.navigation-list > li > h5{
