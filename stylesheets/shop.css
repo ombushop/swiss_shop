@@ -279,21 +279,23 @@ header #header-content{
 
 /* Categories */
 #taxonomies {
-  position: absolute;
+  position: relative;
   z-index: 10000;
+  float: left;
+  max-width: 160px;
 }
 #taxonomies ul.navigation-list {
-  background: #F2F4F9;
+  background: #FFFFFF;
 }
 #taxonomies ul.navigation-list > li > ul {
   font-size: 1.5em;
   line-height: 1.5em;
-  position: absolute;
   top: 66px;
   left: 0;
   z-index: 500;
   min-width: 160px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 #taxonomies ul.navigation-list > li > ul> li.current > a, #taxonomies ul.navigation-list > li > ul> li.root > ul > li.current> a{
   background-color: #000;
@@ -914,6 +916,8 @@ button.buy-button:active {
     text-align: center;
     border-top: #000 2px solid;
     margin: 1em 0;
+    float: none;
+    max-width: none;
   }
   #taxonomies > ul.navigation-list > li > h5{
     width:100%;
@@ -927,6 +931,7 @@ button.buy-button:active {
     top: 10px;
     left: 0;
     z-index: 50;
+    margin-bottom: 0;
   }
   .product-listing{
     min-width:initial;
