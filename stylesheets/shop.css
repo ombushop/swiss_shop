@@ -362,6 +362,13 @@ li.root > a{
   color: #000000;
 }
 
+.parent_category {
+  font-weight: 900 !important;
+}
+.children_list {
+  padding-left: 0.5em;
+}
+
 /* ========================================= */
 /* Breadcrumbs */
 
